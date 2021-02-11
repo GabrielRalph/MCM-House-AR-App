@@ -1,0 +1,4 @@
+﻿2.0.14b
+Changelog:
+-Fixed regression bug on FBX animations.
+-Fixed HDRP materials.
