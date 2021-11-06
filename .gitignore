@@ -2,3 +2,6 @@
 */.DS_Store
 *.DS_Store
 *.p12
+/Assets/Firebase/*
+/Assets/IOSGoodies/*
+/Assets/AndroidGoodies/*
