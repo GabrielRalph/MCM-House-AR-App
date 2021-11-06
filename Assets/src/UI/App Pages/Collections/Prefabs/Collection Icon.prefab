@@ -78,6 +78,7 @@ MonoBehaviour:
   ClickBoxMode: 0
   ClickBoxPaddingVW: {x: 0, y: 0}
   ClickMoveLimit: 5
+  minY: 0
 --- !u!1001 &4455022989356236790
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -90,6 +91,11 @@ PrefabInstance:
       propertyPath: Image
       value: 
       objectReference: {fileID: 7890019760698859909}
+    - target: {fileID: 2174872605696295917, guid: 03c983747154d41cca5399a2e7bdf3a8,
+        type: 3}
+      propertyPath: AspectRatio
+      value: 1.49
+      objectReference: {fileID: 0}
     - target: {fileID: 7908918217546799610, guid: 03c983747154d41cca5399a2e7bdf3a8,
         type: 3}
       propertyPath: m_Name

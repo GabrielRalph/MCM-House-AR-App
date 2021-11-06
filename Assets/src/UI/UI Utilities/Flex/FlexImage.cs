@@ -4,8 +4,7 @@ using UnityEngine.UI;
 
 public class FlexImage : FlexElement{
   public Image Image;
-
-
+  public float AspectRatio = 0;
 
   /* HeightFromWidth, given a desired width returns the height
      that will preserve the image aspect ratio.
@@ -55,6 +54,10 @@ public class FlexImage : FlexElement{
         Image = GetComponent<Image>();
         if (Image == null) return;
       }
+      
+      if (AspectRatio > 0) {
+        texture = CropTexture(AspectRatio, texture);
+      }
 
       Image.sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0, 0));
   }
@@ -63,5 +66,34 @@ public class FlexImage : FlexElement{
     set {
       SetTexture(value);
     }
+  }
+
+  public static Texture2D CropTexture(float r, Texture2D source) {
+    float w = source.width;
+    float h = source.height;
+
+    float x0 = 0;
+    float y0 = 0;
+
+    float real_r = w / h;
+
+    //to tall
+    if (r > real_r) {
+      float nh = w / r;
+      y0 = (h - nh) / 2;
+      h = nh;
+
+    //to wide
+    } else {
+      float nw = h * r;
+      x0 = (w - nw) / 2;
+      w = nw;
+    }
+
+    Texture2D output = new Texture2D((int)w, (int)h);
+    Color[] pixels = source.GetPixels((int)x0, (int)y0, (int)w, (int)h);
+    output.SetPixels(pixels);
+    output.Apply();
+    return output;
   }
 }

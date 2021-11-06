@@ -110,3 +110,4 @@ MonoBehaviour:
     right: 0
     bottom: 0
   Image: {fileID: 0}
+  AspectRatio: 0
