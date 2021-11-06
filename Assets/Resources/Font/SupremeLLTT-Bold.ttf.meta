@@ -1,0 +1,36 @@
+fileFormatVersion: 2
+guid: ce533e739bb4943de83816bc4cb1d370
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Supreme LL TT
+  fontNames:
+  - Supreme LL TT
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 57b6675081cfd4b0fbde28a90c4bfb05, type: 3}
+  - {fileID: 12800000, guid: 51d9bea04a6c94fc1823bf62abe010c4, type: 3}
+  - {fileID: 12800000, guid: 721160e2fdbbb44acbfa1e019fcf5e91, type: 3}
+  - {fileID: 12800000, guid: 35bb33030b38d43cca2e6c90ab4218a2, type: 3}
+  - {fileID: 12800000, guid: c61e6f03d91d74ee0aa3265cca258cfe, type: 3}
+  - {fileID: 12800000, guid: 4a67d06365c0c4bf7896b4eb4347892e, type: 3}
+  - {fileID: 12800000, guid: 76b78fb3253604310aaaf4d189f9e066, type: 3}
+  - {fileID: 12800000, guid: fc461b07ccb334693b9f99bb886457d0, type: 3}
+  - {fileID: 12800000, guid: 15653ff72281d40daaac99d45444cf80, type: 3}
+  - {fileID: 12800000, guid: ba4c4fd822a1d44a09577b85fa34327d, type: 3}
+  - {fileID: 12800000, guid: ab50283994a0c482ba2b8dc1524a54cc, type: 3}
+  - {fileID: 12800000, guid: d788ce399a3c4484393870a905058697, type: 3}
+  - {fileID: 12800000, guid: bd4146fdb7e6545f5aeaf960ec1b68de, type: 3}
+  - {fileID: 12800000, guid: 3027556f8bb3241b48d5ae1f59aaa6e6, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

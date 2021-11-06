@@ -1,0 +1,290 @@
+[
+  {
+    "name": "ARPlaneIcon",
+    "methods": [
+      "Reset(): void"
+    ],
+    "properties": [
+      "On: bool",
+      "isPlane: bool",
+      "planeSelected: bool",
+      "PointOfView: Pose",
+      "Origin: Pose",
+      "Plane: Plane"
+    ]
+  },
+  {
+    "name": "ARModel",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "ARGestures",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "ARScene",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+
+
+
+  {
+    "name": "AssetManager",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+
+  {
+    "name": "Folder",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "Collection",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "Model",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "Variant",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "ModelTexture",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "Thumbnail",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+
+  {
+    "name": "FirebaseContent",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+
+
+  {
+    "name": "App",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "ColorIcon",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "AppPage",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "FolderCarousel",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "FolderImage",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "Splash",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "UIHeader",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+
+  {
+    "name": "ARView",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "ARCenterIcon",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "ARViewHeader",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "Flash",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+
+  {
+    "name": "ARToolPanel",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "ARHelp",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "ARProductInfo",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "ARLoader",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "ARColorPicker",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "ARColorIcon",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+
+  {
+    "name": "CollectionPage",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "CollectionIcon",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "CollectionCarousel",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "Contact",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "ARColorIcon",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "InfoPage",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "ColorIconsInfo",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "ProductPage",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  },
+  {
+    "name": "ProductIcon",
+    "methods": [
+    ],
+    "properties": [
+    ]
+  }
+
+
+
+
+
+]

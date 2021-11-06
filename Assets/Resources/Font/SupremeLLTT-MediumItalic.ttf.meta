@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 76b78fb3253604310aaaf4d189f9e066
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Supreme LL TT
+  fontNames:
+  - Supreme LL TT
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 51d9bea04a6c94fc1823bf62abe010c4, type: 3}
+  - {fileID: 12800000, guid: 721160e2fdbbb44acbfa1e019fcf5e91, type: 3}
+  - {fileID: 12800000, guid: 35bb33030b38d43cca2e6c90ab4218a2, type: 3}
+  - {fileID: 12800000, guid: 15653ff72281d40daaac99d45444cf80, type: 3}
+  - {fileID: 12800000, guid: 3027556f8bb3241b48d5ae1f59aaa6e6, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
