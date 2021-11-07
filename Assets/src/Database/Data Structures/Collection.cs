@@ -80,7 +80,7 @@ public class Collection : Folder{
 
   /* ToString, used for debuging.
   */
-  public string ToString(){
+  public override string ToString(){
     string t = "x";
     if (!Thumbnail.isValid) {
       t = "d";

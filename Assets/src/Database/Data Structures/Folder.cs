@@ -26,6 +26,71 @@ public class Folder{
     }
   }
 
+  // ToWords given a phrase returns a list of words
+  public static string[] ToWords(string text){
+    string desc = text.ToLower();
+    desc = Regex.Replace(desc, @"([\.,\d]|[^\w ]|all |the |and |are |for |but |who |their |using )", "");
+    desc = Regex.Replace(desc, @"(s |s$)", " ");
+    return desc.Split(' ');
+  }
+
+  private Dictionary<string, HashSet<Folder>> searchDictionary;
+  public Dictionary<string, HashSet<Folder>> SearchDictionary{
+    get {
+      // no dictionary exists, create the dictionary
+      if (searchDictionary == null) {
+        Dictionary<string, HashSet<Folder>> sd = new Dictionary<string, HashSet<Folder>>();
+
+        List<Folder> decs = BFS<Folder>();
+        foreach(Folder dec in decs) {
+          string[] words = ToWords(dec.Meta);
+          foreach(string word in words) {
+            if (word.Length > 2) {
+              if (!sd.ContainsKey(word)) {
+                sd[word] = new HashSet<Folder>();
+              }
+
+              sd[word].Add(dec);
+            }
+          }
+        }
+        searchDictionary = sd;
+      }
+
+      return searchDictionary;
+    }
+  }
+
+  // Searches SearchDictionary for matches within a given phrase
+  public List<Folder> Search(string phrase){
+    string[] words = ToWords(phrase);
+    HashSet<Folder> rset = new HashSet<Folder>();
+    foreach (string word in words) {
+      if (SearchDictionary.ContainsKey(word)) {
+        rset.UnionWith(SearchDictionary[word]);
+      }
+    }
+
+    List<Folder> results = new List<Folder>();
+    foreach (Folder f in rset) {
+      results.Add(f);
+    }
+    return results;
+  }
+
+  public void test(){
+    string logs = "sage stool";
+    List<Folder> res = Search(logs);
+    logs += ": " + res.Count + " results";
+    foreach (Folder f in res) logs += "\n" + f.Path;
+    Debug.Log(logs);
+  }
+
+  public virtual string Meta {
+    get {return Name;}
+  }
+
+
   private Dictionary<string, Folder> folders = new Dictionary<string, Folder>();
   public int foldersCount {get {return folders.Count;}}
 
@@ -57,7 +122,6 @@ public class Folder{
     }
     return children;
   }
-
   public List<Folder> Children(){
     List<Folder> children = new List<Folder>();
     foreach ( KeyValuePair<string, Folder> child in folders) {
@@ -85,7 +149,8 @@ public class Folder{
         if ( !subFolder.Visited ) {
           Q.Enqueue(subFolder);
           folders.Add(subFolder);
-          if (subFolder.GetType() == typeof(T)) {
+          if (subFolder.GetType() == typeof(T)
+              || UIElement.Instanceof(subFolder, typeof(T))) {
             descendants.Add((T)(object) subFolder);
           }
           subFolder.Visited = true;
@@ -103,7 +168,8 @@ public class Folder{
   }
   public List<T> BFS<T>(bool inclusive){
     List<T> bfs = DescendantsBFS<T>();
-    if (inclusive && typeof(T) == this.GetType()) bfs.Insert(0, (T)(object) this);
+    if (inclusive && (typeof(T) == this.GetType() || UIElement.Instanceof(this, typeof(T))))
+      bfs.Insert(0, (T)(object) this);
     return bfs;
   }
   public List<T> BFS<T>(){
@@ -184,5 +250,20 @@ public class Folder{
     foreach(Folder folder in folders) {
       await folder.Thumbnail.GetTexture();
     }
+  }
+
+  public string Path{
+    get {
+      string res = Name;
+      Folder parent = Parent;
+      while (parent != null) {
+        res = parent.Name + "/" + res;
+        parent = parent.Parent;
+      }
+      return res;
+    }
+  }
+  public virtual string ToString(){
+    return Path;
   }
 }

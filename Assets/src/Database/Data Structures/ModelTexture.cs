@@ -11,6 +11,12 @@ public class ModelTexture : Folder{
   public MColor Color {get; private set; }=null;
   public bool HasGLB {get; private set; }=false;
 
+  public override string Meta{
+    get {
+      return Color.Name;
+    }
+  }
+
   //Set ar model texture, get returns an inactive instantiated clone
   public ARModel ARModel;
   public GameObject Root;

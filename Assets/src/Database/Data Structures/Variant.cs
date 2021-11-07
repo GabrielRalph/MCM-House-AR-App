@@ -62,7 +62,7 @@ public class Variant : Folder{
   }
 
 
-  public string ToString(){
+  public override string ToString(){
     string t = "t";
     if (!Thumbnail.isValid) {
       t = "x";

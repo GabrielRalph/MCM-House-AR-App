@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using Firebase.Database;
-
+using System.Text.RegularExpressions;
 
 
 public class Model : Folder{
@@ -11,6 +11,12 @@ public class Model : Folder{
   public bool Featured {get; private set; }
   public float Scale {get; private set; } = 1;
   public bool Hidden {get; private set; } = false;
+
+  public override string Meta{
+    get {
+      return Name + " " + Description;
+    }
+  }
 
   /* Model, constructs a model folder given a firebase DataSnapshot.
 
@@ -66,7 +72,7 @@ public class Model : Folder{
   }
 
   /* Used for debuging */
-  public string ToString(){
+  public override string ToString(){
     string t = "x";
     if (!Thumbnail.isValid) {
       t = "d";
