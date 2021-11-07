@@ -11,6 +11,8 @@ public class App : Pages{
   public Collection Assets {get; private set;}
   public bool showSplash = true;
 
+
+  public Hamburger Hamburger;
   public Contact Contact;
   public CollectionPage CollectionPage;
   public ProductPage ProductPage;
@@ -45,6 +47,7 @@ public class App : Pages{
       return;
     }
 
+    Hamburger.Build(Assets);
     Contact.Build(Assets);
 
     CollectionPage.Build(Assets);

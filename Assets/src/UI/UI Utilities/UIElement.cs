@@ -53,6 +53,7 @@ public class UIElement : MonoBehaviour{
   public void LockAll(bool locked) {
     LockAll<UIElement>(gameObject, locked);
   }
+
   public void LockAll<T>(bool locked){
     LockAll<T>(gameObject, locked);
   }

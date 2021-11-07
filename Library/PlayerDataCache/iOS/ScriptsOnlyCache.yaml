@@ -16,6 +16,7 @@ ScriptsOnlyBuild:
     - AssetManager
     - AutoGrid
     - ClickBox
+    - ClickBoxManager
     - CollectionCarousel
     - CollectionIcon
     - CollectionPage
@@ -35,6 +36,7 @@ ScriptsOnlyBuild:
     - FlexText
     - FolderCarousel
     - FolderImage
+    - Hamburger
     - InfoPage
     - Navigator
     - ProductIcon
@@ -85,6 +87,8 @@ ScriptsOnlyBuild:
     - Class: 28
       Script: {instanceID: 0}
     - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -214,6 +218,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14876}
     - Class: 114
       Script: {instanceID: 14892}
+    - Class: 114
+      Script: {instanceID: 82952}
+    - Class: 114
+      Script: {instanceID: 106884}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -351,7 +359,7 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
-      Hash: 62d7a839911d9253a7b0f61f134fa9f5
+      Hash: 1a90a541cc7fe2994a32d64dd394b827
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FolderImage
@@ -465,7 +473,7 @@ ScriptsOnlyBuild:
     className: FingerprintScannerTest
   - hash:
       serializedVersion: 2
-      Hash: 93488a63c9917673f69b190baefe5143
+      Hash: a5370bfad9430cebb93e431898deefd0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: App
@@ -567,13 +575,13 @@ ScriptsOnlyBuild:
     className: ARPlane
   - hash:
       serializedVersion: 2
-      Hash: 62d7a839911d9253a7b0f61f134fa9f5
+      Hash: 1a90a541cc7fe2994a32d64dd394b827
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FlexImage
   - hash:
       serializedVersion: 2
-      Hash: 3045e0420111ce3f2690c73ee52370c5
+      Hash: 7e089f7e944034bbe36601bc0db3c0fb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UIHeader
@@ -657,7 +665,7 @@ ScriptsOnlyBuild:
     className: CursorIcon
   - hash:
       serializedVersion: 2
-      Hash: a120c3eb4f727b7a4f3446dd271ca969
+      Hash: ba62b0cd89290bc41ebebdc035982d19
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Navigator
@@ -717,7 +725,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: 4f7489ba2deeb2e3d58b7572ae37bef5
+      Hash: 96a5ddcadfdc7fed65ade02189e62a90
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ARColorPicker
@@ -765,7 +773,7 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
-      Hash: 21c885037f074930ef5a850e0172c47e
+      Hash: 231916c1d6bd34c4864ec1933177b23e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ARProductInfo
@@ -789,7 +797,7 @@ ScriptsOnlyBuild:
     className: ShortcutsTest
   - hash:
       serializedVersion: 2
-      Hash: 813ceb404e2b4fc57cab884e11744b3c
+      Hash: 15a708c1f46b5b2226155277455cb786
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ClickBox
@@ -1317,7 +1325,7 @@ ScriptsOnlyBuild:
     className: PlaymodeTestsController
   - hash:
       serializedVersion: 2
-      Hash: c437cb8b7784fd78d0b1a9c46e443df8
+      Hash: b858c71bc9133bb64b69ed0826bf3e5c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: VelocityScroll
@@ -1329,7 +1337,7 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
-      Hash: baea58c907ed62fd9c1a180f40d33569
+      Hash: 59df4189d9e062de592d25e952bd3111
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Contact
@@ -1381,7 +1389,25 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 5841763c662d170a895d57235aa14f59
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ClickBoxManager
+  - hash:
+      serializedVersion: 2
+      Hash: 16062665af305b8ef23b74a653cecd8a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Hamburger
+  - hash:
+      serializedVersion: 2
+      Hash: 83ea244bd125ed9a32873ebd1591dcc9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Search
   platform: 9
   scenePathNames:
   - Assets/Scenes/MCM House AR.unity
-  playerPath: /Users/gabriel5leonard/Desktop/Commercial/MCM House/App/Rev 2.5/Build3.3
+  playerPath: /Users/gabriel5leonard/Desktop/Commercial/MCM House/App/Rev 2.5/Builds/Build3.3
