@@ -45,7 +45,6 @@ public class App : Pages{
       return;
     }
 
-    Contact.minY = Navigator.height_px;
     Contact.Build(Assets);
 
     CollectionPage.Build(Assets);

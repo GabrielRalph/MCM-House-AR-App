@@ -1106,6 +1106,7 @@ GameObject:
   - component: {fileID: 262315273}
   - component: {fileID: 262315272}
   - component: {fileID: 262315271}
+  - component: {fileID: 262315275}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -1196,6 +1197,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &262315275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262315270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1abe9bd26832e4d38a2abc5fa4de4249, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Locked: 0
+  ClickMoveLimit: 5
+  ClickBounceTime: 200
 --- !u!1 &270781670
 GameObject:
   m_ObjectHideFlags: 0
@@ -2258,6 +2274,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 343952598}
     m_Modifications:
+    - target: {fileID: 485664552698835954, guid: 109d8ffd872414f59a5b7838a3265a5e,
+        type: 3}
+      propertyPath: m_Name
+      value: Hamburger
+      objectReference: {fileID: 0}
     - target: {fileID: 3078782918137514401, guid: 109d8ffd872414f59a5b7838a3265a5e,
         type: 3}
       propertyPath: App
@@ -2413,6 +2434,11 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.25490198
       objectReference: {fileID: 0}
+    - target: {fileID: 7757372411133275905, guid: 109d8ffd872414f59a5b7838a3265a5e,
+        type: 3}
+      propertyPath: m_Name
+      value: Search
+      objectReference: {fileID: 0}
     - target: {fileID: 9008171555911391830, guid: 109d8ffd872414f59a5b7838a3265a5e,
         type: 3}
       propertyPath: m_Color.b
@@ -2542,6 +2568,7 @@ GameObject:
   - component: {fileID: 676914888}
   - component: {fileID: 676914887}
   - component: {fileID: 676914886}
+  - component: {fileID: 676914889}
   m_Layer: 5
   m_Name: Navigator
   m_TagString: Untagged
@@ -2615,6 +2642,7 @@ MonoBehaviour:
     icon: {fileID: 0}
     text: {fileID: 1576704132338425704}
     hline: {fileID: 0}
+  MainClickBox: {fileID: 0}
   iconOffset: 0.15
   textOffset: -0.13
   iconScale: 0.3
@@ -2657,6 +2685,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 676914884}
   m_CullTransparentMesh: 0
+--- !u!114 &676914889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676914884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c20bc681140342cebc87340b1619b46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Locked: 0
+  ClickBoxMode: 0
+  ClickBoxPaddingVW: {x: 0, y: 0}
 --- !u!224 &699584169 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4522495411893903198, guid: 730c72fd4fcb24194a8f0f4468e1d34e,
@@ -2914,8 +2957,6 @@ MonoBehaviour:
   Locked: 0
   ClickBoxMode: 1
   ClickBoxPaddingVW: {x: 2.5, y: 0}
-  ClickMoveLimit: 5
-  minY: 0
 --- !u!224 &762875904 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6679123280056628242, guid: b5e3935c3587a499c82c74898aaeb6f5,
@@ -5270,6 +5311,7 @@ MonoBehaviour:
     right: 0
     bottom: 0
   Image: {fileID: 1307859253}
+  AspectRatio: 0
 --- !u!114 &1307859252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7164,8 +7206,6 @@ MonoBehaviour:
   Locked: 0
   ClickBoxMode: 1
   ClickBoxPaddingVW: {x: 2.5, y: 0}
-  ClickMoveLimit: 5
-  minY: 0
 --- !u!1001 &1968000689
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7364,6 +7404,7 @@ MonoBehaviour:
     right: 8.5
     bottom: 0
   Image: {fileID: 1986272230}
+  AspectRatio: 0
 --- !u!114 &1986272229
 MonoBehaviour:
   m_ObjectHideFlags: 0

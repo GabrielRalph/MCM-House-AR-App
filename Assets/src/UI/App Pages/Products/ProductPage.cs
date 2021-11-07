@@ -26,7 +26,6 @@ public class ProductPage : AppPage{
     AddLoadingItem();
     icon.Build(variant);
 
-    icon.ClickBox.minY = App.Navigator.height_px;
     icon.ClickBox.AddEventListener("onclick", () => {
       App.MoveToARView(variant.GetDefaultModelTexture());
     });

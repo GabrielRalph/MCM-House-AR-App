@@ -157,4 +157,8 @@ public class UIElement : MonoBehaviour{
     while (element != null && element.gameObject != null && !element.Active)
       await Task.Yield();
   }
+
+  public static long GetMillis(){
+    return DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond;
+  }
 }

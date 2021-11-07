@@ -112,12 +112,10 @@ public class InfoPage : AppPage{
       CurrentTexture = Colors.SelectedModelTexture;
     });
 
-    Link.minY = App.Navigator.height_px;
     Link.AddEventListener("onclick", () => {
       if (Model != null)
         Application.OpenURL(Model.Link);
     });
-    ViewInHome.minY = App.Navigator.height_px;
     ViewInHome.AddEventListener("onclick", () => {
       if (CurrentTexture != null)
         App.MoveToARView(CurrentTexture);

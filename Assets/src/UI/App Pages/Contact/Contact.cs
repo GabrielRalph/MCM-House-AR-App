@@ -11,11 +11,6 @@ public class Contact : VelocityScroll {
   public string instagramAccountName = "mcmhouse";
   public string facebookPageId = "135020629967404";
 
-  public float minY{set{
-    Facebook.minY = value;
-    Instagram.minY = value;
-  }}
-
   public void Build(Collection assets) {
     Instagram.AddEventListener("onclick", () => {
       Application.OpenURL($"instagram://user?username={instagramAccountName}");

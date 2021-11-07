@@ -77,7 +77,6 @@ public class CollectionPage : AppPage{
     AddLoadingItem();
     carousel.Build(collection, true);
 
-    carousel.ClickBox.minY = navY;
     carousel.ClickBox.AddEventListener("onclick", () => {
       App.MoveToProducts();
     });
@@ -107,8 +106,6 @@ public class CollectionPage : AppPage{
     AddLoadingItem();
     carousel.Build(collection);
 
-    carousel.ClickBox.minY = navY;
-    carousel.ImageClickBox.minY = navY;
     carousel.ClickBox.AddEventListener("onclick", () => {
       App.MoveToProducts(collection);
     });
@@ -142,7 +139,6 @@ public class CollectionPage : AppPage{
     AddLoadingItem();
     icon.Build(collection);
 
-    icon.ClickBox.minY = navY;
     icon.ClickBox.AddEventListener("onclick", () => {
       App.MoveToProducts(collection);
     });
@@ -204,6 +200,7 @@ public class CollectionPage : AppPage{
            once loaded isLoaded set true
   */
   public void BuildOld(Collection collection){
+    collection.test();
     if (invalid){
       Debug.Log("Invalid collection page.");
       return;
@@ -271,6 +268,8 @@ public class CollectionPage : AppPage{
       Debug.Log("Items already being loaded.");
       return;
     }
+    collection.test();
+
     if (AllFurniture != null) {
       Debug.Log("sett callback");
       AllFurniture.OnClick = () => {

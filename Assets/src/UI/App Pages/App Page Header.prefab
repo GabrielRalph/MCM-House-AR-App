@@ -57,8 +57,8 @@ MonoBehaviour:
     right: 8.5
     bottom: 3
   Header: {fileID: 5145166318121195734}
-  Icon: {fileID: 3910958067148168086}
-  IconPosition: 0
+  LeftIcon: {fileID: 3910958067148168086}
+  RightIcon: {fileID: 0}
 --- !u!1 &3910958067148168084
 GameObject:
   m_ObjectHideFlags: 0
@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 3910958067148168086}
   - component: {fileID: 4566303633931214219}
   m_Layer: 5
-  m_Name: Icon
+  m_Name: back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

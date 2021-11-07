@@ -12,13 +12,12 @@ public class ClickBox : UIElement{
   // public properties
   public ClickBoxModes ClickBoxMode;
   public Vector2 ClickBoxPaddingVW;
-  public float ClickMoveLimit = 5;
   public Action OnClick = null;
 
-  public float minY = 0;
+  public Vector2 StartPos {get; private set;}
+  public Vector2 EndPos {get; private set;}
 
   // private properties
-  private Vector2 clickStartPos;
   private RectTransform rect = null;
 
   public Vector2 clickBoxPadding_px {get {return ClickBoxPaddingVW * Screen.width / 100;}}
@@ -55,6 +54,7 @@ public class ClickBox : UIElement{
     _size = corners[2] - corners[0];
     _center = (corners[2] + corners[0]) / 2;
   }
+
   public Vector2 Size{
     get {
       update_size_center();
@@ -94,56 +94,13 @@ public class ClickBox : UIElement{
     return false;
   }
 
+  public void Click(Vector2 start, Vector2 end) {
+    StartPos = start;
+    EndPos = end;
 
-  /* Update, if the icon is touched and released without moving more than the
-     click move limit and both the initial and final touch positions
-     exist within the icon's clickbox geometry, call the OnClick Action
-  */
-  private int i = 0;
-  void Update(){
-    if (Locked) return;
-    bool clickEnd = false;
-    Vector2 clickEndPos = Vector2.zero;
-
-    //Touch input
-    if(Input.touchCount == 1){
-      Touch touch = Input.GetTouch(0);
-      switch (touch.phase){
-          // Record initial touch position.
-          case TouchPhase.Began:
-              clickStartPos = touch.position;
-              break;
-
-          // Check to see user has not moved more than limit
-          case TouchPhase.Ended:
-              clickEndPos = touch.position;
-              clickEnd = true;
-              break;
-      }
-
-    //Mouse input
-    }else{
-      if (Input.GetMouseButtonDown(0)){
-        clickStartPos = Input.mousePosition;
-      }else if (Input.GetMouseButtonUp(0)){
-        clickEndPos = Input.mousePosition;
-        clickEnd = true;
-      }
-    }
-
-    if (clickEnd) {
-      if (clickStartPos.y > minY && clickEndPos.y > minY) {
-        if (Vector2.Distance(clickEndPos, clickStartPos) < ClickMoveLimit) {
-          if (ContainsPoint(clickEndPos) && ContainsPoint(clickStartPos) && i == 0) {
-            i = 10;
-            Debug.Log($"{gameObject.name}'s clickbox clicked.");
-            NativeAid.HapticEvent(HEvent.Click);
-            RunEvent("onclick");
-            if (OnClick != null) OnClick();
-          }
-        }
-      }
-    }
-    if (i > 0)i--;
+    Debug.Log($"{gameObject.name}'s clickbox clicked.");
+    NativeAid.HapticEvent(HEvent.Click);
+    RunEvent("onclick");
+    if (OnClick != null) OnClick();
   }
 }

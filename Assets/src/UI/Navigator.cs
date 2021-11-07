@@ -66,6 +66,7 @@ public class Navigator : FlexElement {
   public App App;
   public List<ClickBox> Home = new List<ClickBox>();
   public List<NavIcon> Icons = new List<NavIcon>();
+  public ClickBox MainClickBox;
 
   public float iconOffset = 0.2f;
   public float textOffset = 0.15f;
@@ -75,11 +76,14 @@ public class Navigator : FlexElement {
   public bool hide = false;
 
   void Awake(){
+    // add home button click boxes
     foreach (ClickBox home in Home) {
       home.AddEventListener("onclick", () => {
         App.MoveToCollections(true);
       });
     }
+
+    // hide if in arview otherwise show
     App.AddEventListener("beforeshow", () => {
       if (App.nPage == App.ARView.gameObject) {
         hide = true;
@@ -90,10 +94,16 @@ public class Navigator : FlexElement {
         hide = false;
       }
     });
+
+    if (MainClickBox == null) {
+      MainClickBox = GetComponent<ClickBox>();
+    }
+    if (MainClickBox != null) {
+      MainClickBox.OnClick = onClicked;
+    }
+
     selectPage(Icons[0]);
   }
-
-
 
   public float height_px {get {return HeightVW * Screen.width / 100;}}
   private float yRatio = 0;
@@ -155,47 +165,25 @@ public class Navigator : FlexElement {
     lastIcon = icon;
   }
 
-  private void click(Vector2 start, Vector2 end){
-    // Debug.Log(end);
+  private void onClicked(){
+    Vector2 start = MainClickBox.StartPos;
+    Vector2 end = MainClickBox.EndPos;
+
     for (int i = 0; i < n; i++) {
       if (inDiv(start, i) && inDiv(end, i))  {
         App.MoveTo(Icons[i].page);
-
-
-
         VelocityScroll scroll = Icons[i].page.GetComponent<VelocityScroll>();
         if (scroll != null){
           scroll.SetScrollPosition(0);
         }
-
         selectPage(Icons[i]);
-
         break;
       }
     }
   }
 
-  private Vector2 start;
   void Update(){
     updateYPos();
     updateElements();
-    if (hide || App.moving) return;
-    if (Input.touchCount > 0) {
-      Touch touch = Input.GetTouch(0);
-      switch(touch.phase) {
-        case TouchPhase.Began:
-          start = touch.position;
-          break;
-        case TouchPhase.Ended:
-          click(start, touch.position);
-          break;
-      }
-    }
-
-    if (Input.GetMouseButtonDown(0)){
-      start = Input.mousePosition;
-    }else if (Input.GetMouseButtonUp(0)){
-      click(start, Input.mousePosition);
-    }
   }
 }
