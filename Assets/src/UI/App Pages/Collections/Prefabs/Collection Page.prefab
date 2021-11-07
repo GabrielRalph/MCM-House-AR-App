@@ -31,7 +31,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7025670146627883556}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -140,6 +140,7 @@ RectTransform:
   m_Children:
   - {fileID: 7025670146627883556}
   - {fileID: 6107020276152262459}
+  - {fileID: 7970211808215218250}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -223,6 +224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Locked: 0
   HeaderElement: {fileID: 6992516342026441545}
+  StaticHeaderElement: {fileID: 6232853683432010135}
   BodyElement: {fileID: 7133980499967332193}
   Decay: 0.9
   BounceLength: 300
@@ -258,7 +260,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7970211808215218250}
   - {fileID: 6148901568845481305}
   - {fileID: 9197543028864423388}
   - {fileID: 9008171557360857485}
@@ -340,7 +341,7 @@ GameObject:
   - component: {fileID: 3381621433613544702}
   - component: {fileID: 350349398172971231}
   m_Layer: 5
-  m_Name: Box
+  m_Name: Static Header
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -353,13 +354,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6215958321419030066}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 485664552912554226}
-  m_Father: {fileID: 7025670146627883556}
-  m_RootOrder: 0
+  m_Father: {fileID: 3078782918137514404}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -525,8 +526,6 @@ MonoBehaviour:
   Locked: 0
   ClickBoxMode: 1
   ClickBoxPaddingVW: {x: 5, y: 0}
-  ClickMoveLimit: 5
-  minY: 0
 --- !u!1 &8833028159050106052
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,7 +622,7 @@ PrefabInstance:
     - target: {fileID: 8152023461244380985, guid: 189020944bf334342ade30b64a58827b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8152023461244380985, guid: 189020944bf334342ade30b64a58827b,
         type: 3}
@@ -911,7 +910,7 @@ PrefabInstance:
     - target: {fileID: 801490518276419197, guid: 38e5add1ef55f440988daffc6aa6af82,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 801490518276419197, guid: 38e5add1ef55f440988daffc6aa6af82,
         type: 3}

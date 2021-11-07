@@ -15,6 +15,7 @@ public class VelocityScroll : UIElement{
 /* ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ Public Variabls ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ ☆ */
   // Scroll elements
   public FlexElement HeaderElement;
+  public FlexElement StaticHeaderElement;
   public FlexElement BodyElement;
 
   // Scroll properties
@@ -181,6 +182,22 @@ public class VelocityScroll : UIElement{
     float width = ViewWidth;
     float height = 0;
 
+    if (StaticHeaderElement != null) {
+      //Header anchors and pivot to center
+      StaticHeaderElement.DefaultAnchors();
+      StaticHeaderElement.DefaultPivot();
+
+      //Resize and position header
+      StaticHeaderElement.Width = width;
+
+      StaticHeaderElement.Pos = new Vector2(0, -1*(StaticHeaderElement.Height/2));
+
+      StaticHeaderElement.SetAnchors(new Vector2(0.5f, 1), new Vector2(0.5f, 1));
+      StaticHeaderElement.ResetPivot();
+
+      height += StaticHeaderElement.Height;
+    }
+
     // If HeaderElement is given
     if (HeaderElement != null){
       //Header anchors and pivot to center
@@ -191,9 +208,9 @@ public class VelocityScroll : UIElement{
       HeaderElement.Width = width;
       //Header will not bounce at top
       if (sPos > 0){
-        HeaderElement.Pos = new Vector2(0, -1*(HeaderElement.Height/2));
+        HeaderElement.Pos = new Vector2(0, -1*(height + HeaderElement.Height/2));
       }else{
-        HeaderElement.Pos = new Vector2(0, -1*(sPos + HeaderElement.Height/2));
+        HeaderElement.Pos = new Vector2(0, -1*(sPos + height + HeaderElement.Height/2));
       }
 
       //Set header anchor to middle top and restore pivot
@@ -202,6 +219,8 @@ public class VelocityScroll : UIElement{
 
       height += HeaderElement.Height;
     }
+
+
 
     //If BodyElement is given
     if (BodyElement != null) {
