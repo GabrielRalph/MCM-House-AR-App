@@ -26,35 +26,19 @@ public class Folder{
     }
   }
 
-  // ToWords given a phrase returns a list of words
-  public static string[] ToWords(string text){
-    string desc = text.ToLower();
-    desc = Regex.Replace(desc, @"([\.,\d]|[^\w ]|all |the |and |are |for |but |who |their |using )", "");
-    desc = Regex.Replace(desc, @"(s |s$)", " ");
-    return desc.Split(' ');
-  }
 
-  private Dictionary<string, HashSet<Folder>> searchDictionary;
-  public Dictionary<string, HashSet<Folder>> SearchDictionary{
+  private SearchDictionary<Folder> searchDictionary;
+  public SearchDictionary<Folder> SearchDictionary{
     get {
       // no dictionary exists, create the dictionary
       if (searchDictionary == null) {
-        Dictionary<string, HashSet<Folder>> sd = new Dictionary<string, HashSet<Folder>>();
+        searchDictionary = new SearchDictionary<Folder>();
 
         List<Folder> decs = BFS<Folder>();
         foreach(Folder dec in decs) {
-          string[] words = ToWords(dec.Meta);
-          foreach(string word in words) {
-            if (word.Length > 2) {
-              if (!sd.ContainsKey(word)) {
-                sd[word] = new HashSet<Folder>();
-              }
-
-              sd[word].Add(dec);
-            }
-          }
+          searchDictionary.AddByPhrase(dec.Meta, dec);
         }
-        searchDictionary = sd;
+        // searchDictionary.Log();
       }
 
       return searchDictionary;
@@ -63,19 +47,31 @@ public class Folder{
 
   // Searches SearchDictionary for matches within a given phrase
   public List<Folder> Search(string phrase){
-    string[] words = ToWords(phrase);
-    HashSet<Folder> rset = new HashSet<Folder>();
-    foreach (string word in words) {
-      if (SearchDictionary.ContainsKey(word)) {
-        rset.UnionWith(SearchDictionary[word]);
+    return SearchDictionary.Search(phrase);
+  }
+
+  public List<Variant> SearchVariants(string phrase){
+    List<Folder> folders = Search(phrase);
+    Debug.Log(folders.Count);
+    
+    HashSet<Variant> variants = new HashSet<Variant>();
+    foreach (Folder folder in folders) {
+      Debug.Log(folder.Name);
+      if (folder.GetType() == typeof(Collection) || folder.GetType() == typeof(Model)) {
+        variants.UnionWith(folder.BFS<Variant>());
+      } else if (folder.GetType() == typeof(Variant)) {
+        variants.Add((Variant) folder);
+      } else if (folder.GetType() == typeof(ModelTexture)) {
+        variants.Add(folder.GetParent<Variant>());
       }
     }
 
-    List<Folder> results = new List<Folder>();
-    foreach (Folder f in rset) {
-      results.Add(f);
+    List<Variant> res = new List<Variant>();
+    foreach (Variant variant in variants) {
+      res.Add(variant);
     }
-    return results;
+
+    return res;
   }
 
   public void test(){

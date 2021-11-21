@@ -53,7 +53,7 @@ public class ARScene : MonoBehaviour {
     }
   }
 
-
+  public int ModelsCount {get {return ModelsInScene.Count;}}
   public Pose Origin {get {return PlaneIcon.Origin;}}
   public Pose PointOfView {get {return PlaneIcon.PointOfView;}}
   public Plane Plane {get {return PlaneIcon.Plane;}}

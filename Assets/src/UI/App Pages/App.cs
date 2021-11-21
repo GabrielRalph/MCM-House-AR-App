@@ -20,6 +20,7 @@ public class App : Pages{
   public ARView ARView;
   public ARScene ARScene;
   public Navigator Navigator;
+  public Search Search;
 
 
   public async void ResetCollection(){
@@ -47,7 +48,7 @@ public class App : Pages{
       return;
     }
 
-    Hamburger.Build(Assets);
+    if (Hamburger != null) Hamburger.Build(Assets);
     Contact.Build(Assets);
 
     CollectionPage.Build(Assets);
@@ -76,6 +77,9 @@ public class App : Pages{
     MoveToProducts(collection.Name, collection.BFS<Variant>());
   }
 
+  public void MoveToProductsSearch(string phrase) {
+    MoveToProducts(phrase, Assets.SearchVariants(phrase));
+  }
 
   private bool mvg = false;
   public async void MoveToProducts(string name, List<Variant> variants) {
@@ -116,10 +120,12 @@ public class App : Pages{
     MoveTo(ARView);
     ARScene.AddModel(model);
   }
+  public void MoveToARView(){
+    MoveTo(ARView);
+  }
 
   /* Move and build info page */
   public async void MoveToInfo(Variant variant) {
-    // InfoPage.transform.localPosition
     InfoPage.Build(variant);
     LockAll(cPage, true);
     if (!InfoPage.isLoaded) {

@@ -13,6 +13,7 @@ public class ClickBox : UIElement{
   public ClickBoxModes ClickBoxMode;
   public Vector2 ClickBoxPaddingVW;
   public Action OnClick = null;
+  public bool Haptic = true;
 
   public Vector2 StartPos {get; private set;}
   public Vector2 EndPos {get; private set;}
@@ -99,7 +100,7 @@ public class ClickBox : UIElement{
     EndPos = end;
 
     Debug.Log($"{gameObject.name}'s clickbox clicked.");
-    NativeAid.HapticEvent(HEvent.Click);
+    if (Haptic) NativeAid.HapticEvent(HEvent.Click);
     RunEvent("onclick");
     if (OnClick != null) OnClick();
   }

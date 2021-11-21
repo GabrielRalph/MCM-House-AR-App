@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UnityLaunchScreen-ViewController">
+    <device id="retina6_1" orientation="landscape" appearance="light" />
+    <dependencies>
+        <deployment version="4352" identifier="iOS" />
+        <development version="9000" identifier="xcode" />
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704" />
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0" />
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="UnityLaunchScreen-Scene">
+            <objects>
+                <viewController id="UnityLaunchScreen-ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0qg-hg-560" />
+                        <viewControllerLayoutGuide type="bottom" id="W7m-yd-DrY" />
+                    </layoutGuides>
+                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="UnityLaunchScreen-RootView" userLabel="RootView">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414" />
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" />
+                        <subviews>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="UnityLaunchScreen-ScaleViewPortrait" userLabel="ScaleViewPortrait">
+                                <rect key="frame" x="20.5" y="-2000" width="373" height="4896" />
+                                <subviews>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen-iPhonePortrait.png" translatesAutoresizingMaskIntoConstraints="NO" id="UnityLaunchScreen-ImageViewPortrait" userLabel="ImageViewPortrait">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="4896" />
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB" />
+                                <constraints>
+                                    <constraint firstAttribute="leading" secondItem="UnityLaunchScreen-ImageViewPortrait" secondAttribute="leading" id="YUN-2X-hsp" />
+                                    <constraint firstAttribute="top" secondItem="UnityLaunchScreen-ImageViewPortrait" secondAttribute="top" id="qN9-t3-R8m" />
+                                    <constraint firstAttribute="trailing" secondItem="UnityLaunchScreen-ImageViewPortrait" secondAttribute="trailing" id="saP-Hr-mai" />
+                                    <constraint firstAttribute="bottom" secondItem="UnityLaunchScreen-ImageViewPortrait" secondAttribute="bottom" id="xeh-Jd-f1n" />
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="UnityLaunchScreen-ImageViewPortrait" />
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="YUN-2X-hsp" />
+                                        <exclude reference="qN9-t3-R8m" />
+                                        <exclude reference="saP-Hr-mai" />
+                                        <exclude reference="xeh-Jd-f1n" />
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="subviews">
+                                        <include reference="UnityLaunchScreen-ImageViewPortrait" />
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="YUN-2X-hsp" />
+                                        <include reference="qN9-t3-R8m" />
+                                        <include reference="saP-Hr-mai" />
+                                        <include reference="xeh-Jd-f1n" />
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="UnityLaunchScreen-ScaleViewLandscape" userLabel="ScaleViewLandscape">
+                                <rect key="frame" x="-2000" y="20.5" width="4896" height="373" />
+                                <subviews>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen-iPhoneLandscape.png" translatesAutoresizingMaskIntoConstraints="NO" id="UnityLaunchScreen-ImageViewLandscape" userLabel="ImageViewLandscape">
+                                        <rect key="frame" x="0.0" y="0.0" width="4896" height="373" />
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB" />
+                                <constraints>
+                                    <constraint firstAttribute="leading" secondItem="UnityLaunchScreen-ImageViewLandscape" secondAttribute="leading" id="7Nj-N7-qqc" />
+                                    <constraint firstAttribute="top" secondItem="UnityLaunchScreen-ImageViewLandscape" secondAttribute="top" id="L51-C2-f8h" />
+                                    <constraint firstAttribute="trailing" secondItem="UnityLaunchScreen-ImageViewLandscape" secondAttribute="trailing" id="UQN-56-JEL" />
+                                    <constraint firstAttribute="bottom" secondItem="UnityLaunchScreen-ImageViewLandscape" secondAttribute="bottom" id="kVz-kq-pNU" />
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="UnityLaunchScreen-ImageViewLandscape" />
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="7Nj-N7-qqc" />
+                                        <exclude reference="L51-C2-f8h" />
+                                        <exclude reference="UQN-56-JEL" />
+                                        <exclude reference="kVz-kq-pNU" />
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="UnityLaunchScreen-ImageViewLandscape" />
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="7Nj-N7-qqc" />
+                                        <include reference="L51-C2-f8h" />
+                                        <include reference="UQN-56-JEL" />
+                                        <include reference="kVz-kq-pNU" />
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9607843" green="0.9607843" blue="0.9607843" alpha="1" colorSpace="custom" customColorSpace="sRGB" />
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB" />
+                        <constraints>
+                            <constraint firstItem="UnityLaunchScreen-ScaleViewPortrait" firstAttribute="top" secondItem="UnityLaunchScreen-RootView" secondAttribute="top" constant="-2000" id="0kh-ex-StW" />
+                            <constraint firstItem="UnityLaunchScreen-ScaleViewPortrait" firstAttribute="centerY" secondItem="UnityLaunchScreen-RootView" secondAttribute="centerY" id="MVC-vY-r61" />
+                            <constraint firstItem="UnityLaunchScreen-ScaleViewLandscape" firstAttribute="leading" secondItem="UnityLaunchScreen-RootView" secondAttribute="leading" constant="-2000" id="SKn-wT-zpT" />
+                            <constraint firstItem="UnityLaunchScreen-ScaleViewLandscape" firstAttribute="bottom" secondItem="UnityLaunchScreen-RootView" secondAttribute="bottom" multiplier="1" id="UnityLaunchScreen-RelativeHeightBottomConstraint" />
+                            <constraint firstItem="UnityLaunchScreen-ScaleViewLandscape" firstAttribute="top" secondItem="UnityLaunchScreen-RootView" secondAttribute="top" multiplier="1" id="UnityLaunchScreen-RelativeHeightTopConstraint" />
+                            <constraint firstItem="UnityLaunchScreen-ScaleViewPortrait" firstAttribute="leading" secondItem="UnityLaunchScreen-RootView" secondAttribute="leading" multiplier="1" id="UnityLaunchScreen-RelativeWeightLeadingConstraint" />
+                            <constraint firstItem="UnityLaunchScreen-ScaleViewPortrait" firstAttribute="trailing" secondItem="UnityLaunchScreen-RootView" secondAttribute="trailing" multiplier="1" id="UnityLaunchScreen-RelativeWeightTrailingConstraint" />
+                            <constraint firstAttribute="trailing" secondItem="UnityLaunchScreen-ScaleViewLandscape" secondAttribute="trailing" constant="-2000" id="kGT-Bl-KJn" />
+                            <constraint firstItem="UnityLaunchScreen-ScaleViewLandscape" firstAttribute="centerX" secondItem="UnityLaunchScreen-RootView" secondAttribute="centerX" id="nEk-gC-oJj" />
+                            <constraint firstAttribute="bottom" secondItem="UnityLaunchScreen-ScaleViewPortrait" secondAttribute="bottom" constant="-2000" id="rQ6-gW-Rdm" />
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="UnityLaunchScreen-ScaleViewPortrait" />
+                                <exclude reference="UnityLaunchScreen-ScaleViewLandscape" />
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0kh-ex-StW" />
+                                <exclude reference="MVC-vY-r61" />
+                                <exclude reference="SKn-wT-zpT" />
+                                <exclude reference="UnityLaunchScreen-RelativeHeightBottomConstraint" />
+                                <exclude reference="UnityLaunchScreen-RelativeHeightTopConstraint" />
+                                <exclude reference="UnityLaunchScreen-RelativeWeightLeadingConstraint" />
+                                <exclude reference="UnityLaunchScreen-RelativeWeightTrailingConstraint" />
+                                <exclude reference="kGT-Bl-KJn" />
+                                <exclude reference="nEk-gC-oJj" />
+                                <exclude reference="rQ6-gW-Rdm" />
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="UnityLaunchScreen-ScaleViewLandscape" />
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="SKn-wT-zpT" />
+                                <include reference="UnityLaunchScreen-RelativeHeightBottomConstraint" />
+                                <include reference="UnityLaunchScreen-RelativeHeightTopConstraint" />
+                                <include reference="kGT-Bl-KJn" />
+                                <include reference="nEk-gC-oJj" />
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="UnityLaunchScreen-ScaleViewPortrait" />
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0kh-ex-StW" />
+                                <include reference="MVC-vY-r61" />
+                                <include reference="UnityLaunchScreen-RelativeWeightLeadingConstraint" />
+                                <include reference="UnityLaunchScreen-RelativeWeightTrailingConstraint" />
+                                <include reference="rQ6-gW-Rdm" />
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder" />
+            </objects>
+            <point key="canvasLocation" x="53" y="375" />
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchScreen-iPhoneLandscape.png" width="0" height="0" />
+        <image name="LaunchScreen-iPhonePortrait.png" width="0" height="0" />
+    </resources>
+</document>

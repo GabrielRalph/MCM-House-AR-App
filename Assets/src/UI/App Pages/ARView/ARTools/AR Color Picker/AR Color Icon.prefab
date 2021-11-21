@@ -74,8 +74,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Locked: 0
   ClickBoxMode: 0
-  ClickBoxPaddingVW: {x: 0, y: 0}
-  ClickMoveLimit: 5
+  ClickBoxPaddingVW: {x: 4, y: 3}
 --- !u!1001 &4041261959376739775
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -233,6 +232,11 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 3804826460323660519, guid: 57796e2a217454ef6b838af85189c8c6,
         type: 3}
+      propertyPath: ClickBox
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3804826460323660519, guid: 57796e2a217454ef6b838af85189c8c6,
+        type: 3}
       propertyPath: PaddingVW.right
       value: 2.5
       objectReference: {fileID: 0}
@@ -352,7 +356,8 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 3f91331724a9da84197e9b6d94f0483c,
         type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8437029380415034297, guid: 57796e2a217454ef6b838af85189c8c6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 57796e2a217454ef6b838af85189c8c6, type: 3}
 --- !u!224 &3717844425985832020 stripped
 RectTransform:

@@ -37,16 +37,12 @@ public class UIElement : MonoBehaviour{
   public void LockAll(GameObject obj, bool locked) {
     LockAll<UIElement>(obj, locked);
   }
-  public void LockAll<T>(GameObject obj, bool locked) {
-    if (Instanceof(typeof(T), typeof(UIElement))) {
-      UIElement el = obj.GetComponent<UIElement>();
-      if (el != null && el.IsInstanceof(typeof(T))) {
-        el.Locked = locked;
-      }
 
-      // Component[] comps = GetComponentsInChildren<UIElement>();
-      foreach (Transform child in obj.transform) {
-        LockAll<T>(child.gameObject, locked);
+  public void LockAll<T>(GameObject obj, bool locked) {
+    UIElement[] elements = obj.GetComponentsInChildren<UIElement>(true);
+    foreach (UIElement element in elements) {
+      if (Instanceof(element, typeof(T))) {
+        element.Locked = locked;
       }
     }
   }

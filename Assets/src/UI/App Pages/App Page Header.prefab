@@ -57,8 +57,9 @@ MonoBehaviour:
     right: 8.5
     bottom: 3
   Header: {fileID: 5145166318121195734}
-  LeftIcon: {fileID: 3910958067148168086}
-  RightIcon: {fileID: 0}
+  LeftIcons:
+  - {fileID: 3910958067148168086}
+  RightIcons: []
 --- !u!1 &3910958067148168084
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,8 +162,6 @@ MonoBehaviour:
   Locked: 0
   ClickBoxMode: 1
   ClickBoxPaddingVW: {x: 5, y: 0}
-  ClickMoveLimit: 5
-  minY: 0
 --- !u!1001 &3910958067318276078
 PrefabInstance:
   m_ObjectHideFlags: 0
