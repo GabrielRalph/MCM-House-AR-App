@@ -121,8 +121,8 @@ public class ARModel : MonoBehaviour {
   public void SetGlossMapScale(float scale = 0f){
     foreach(MeshRenderer mesh in Meshes){
       foreach (Material material in mesh.materials){
-        material.SetFloat("_Roughness", scale);
-        material.SetFloat("_MetallicGlossMap", scale);
+        // material.SetFloat("_Roughness", scale);
+        // material.SetFloat("_MetallicGlossMap", scale);
 
       }
     }

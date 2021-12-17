@@ -571,6 +571,28 @@ Transform:
   m_Father: {fileID: 879329622}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &151246871 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6215958321419030066, guid: 109d8ffd872414f59a5b7838a3265a5e,
+    type: 3}
+  m_PrefabInstance: {fileID: 625483656}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &151246876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151246871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c20bc681140342cebc87340b1619b46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Locked: 0
+  ClickBoxMode: 0
+  ClickBoxPaddingVW: {x: 0, y: 0}
+  Haptic: 0
 --- !u!1001 &183518072
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2969,6 +2991,7 @@ MonoBehaviour:
   Locked: 0
   ClickBoxMode: 0
   ClickBoxPaddingVW: {x: 0, y: 0}
+  Haptic: 1
 --- !u!224 &699584169 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4522495411893903198, guid: 730c72fd4fcb24194a8f0f4468e1d34e,
@@ -3226,6 +3249,7 @@ MonoBehaviour:
   Locked: 0
   ClickBoxMode: 1
   ClickBoxPaddingVW: {x: 2.5, y: 0}
+  Haptic: 1
 --- !u!224 &762875904 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6679123280056628242, guid: b5e3935c3587a499c82c74898aaeb6f5,
@@ -6180,18 +6204,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1454546497}
   m_CullTransparentMesh: 0
+--- !u!1 &1474762619 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5581403962511896342, guid: 10884fbca162843f785b321f7619e630,
+    type: 3}
+  m_PrefabInstance: {fileID: 909204226}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1474762621 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 735760049762633625, guid: 10884fbca162843f785b321f7619e630,
     type: 3}
   m_PrefabInstance: {fileID: 909204226}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1474762619}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f787ea2220edc4c5c9afd3bd0ca9ca40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1474762624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474762619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c20bc681140342cebc87340b1619b46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Locked: 0
+  ClickBoxMode: 0
+  ClickBoxPaddingVW: {x: 0, y: 0}
+  Haptic: 0
 --- !u!1 &1484480149
 GameObject:
   m_ObjectHideFlags: 0
@@ -7588,6 +7634,7 @@ MonoBehaviour:
   Locked: 0
   ClickBoxMode: 1
   ClickBoxPaddingVW: {x: 2.5, y: 0}
+  Haptic: 1
 --- !u!1001 &1968000689
 PrefabInstance:
   m_ObjectHideFlags: 0
