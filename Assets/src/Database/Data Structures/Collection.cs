@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using Firebase.Database;
 
-
 public class Collection : Folder{
   /* Collection, constructs a collection given a firebase data snapshot
 
@@ -44,6 +43,7 @@ public class Collection : Folder{
       }
       return new List<T>();
   }
+
   public List<Variant> GetFeaturedVariants(){
     List<Variant> featured = new List<Variant>();
     List<Variant> variants = DescendantsBFS<Variant>();

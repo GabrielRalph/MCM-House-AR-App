@@ -78,16 +78,22 @@ public class App : Pages{
   }
 
   public void MoveToProductsSearch(string phrase) {
-    MoveToProducts(phrase, Assets.SearchVariants(phrase));
+    List<Variant> results = Assets.SearchVariants(phrase);
+    if (results.Count > 0) {
+      MoveToProducts(phrase, results);
+    } else {
+      string no_res_phrase = $"Sorry, no results found for\n\"{phrase}\"";
+      MoveToProducts(no_res_phrase, Assets.GetFeaturedVariants(), true);
+    }
   }
 
   private bool mvg = false;
-  public async void MoveToProducts(string name, List<Variant> variants) {
+  public async void MoveToProducts(string name, List<Variant> variants, bool noResults = false) {
     if (mvg) return;
     mvg = true;
 
     ProductPage.gameObject.SetActive(false);
-    ProductPage.Build(name, variants);
+    ProductPage.Build(name, variants, noResults);
     LockAll(cPage, true);
     if (!ProductPage.isLoaded) {
 
