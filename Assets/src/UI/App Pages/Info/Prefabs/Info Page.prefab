@@ -311,6 +311,7 @@ MonoBehaviour:
   Locked: 0
   ClickBoxMode: 0
   ClickBoxPaddingVW: {x: 0, y: 0}
+  Haptic: 1
 --- !u!1 &1262568533645674257
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,6 +440,7 @@ MonoBehaviour:
   Locked: 0
   ClickBoxMode: 0
   ClickBoxPaddingVW: {x: 0, y: 0}
+  Haptic: 1
 --- !u!1 &1262568534077028086
 GameObject:
   m_ObjectHideFlags: 0
@@ -1379,7 +1381,7 @@ PrefabInstance:
     - target: {fileID: 6359318074451680812, guid: 6a6a795cbcbc142f6a8a4d25e19c29ac,
         type: 3}
       propertyPath: m_Text
-      value: Purchase on website >
+      value: View on website >
       objectReference: {fileID: 0}
     - target: {fileID: 6359318074451680812, guid: 6a6a795cbcbc142f6a8a4d25e19c29ac,
         type: 3}
@@ -2871,11 +2873,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7034997939754662006}
     m_Modifications:
-    - target: {fileID: 1966966219947603870, guid: b5e3935c3587a499c82c74898aaeb6f5,
-        type: 3}
-      propertyPath: PaddingVW.bottom
-      value: 12
-      objectReference: {fileID: 0}
     - target: {fileID: 6122395279984790101, guid: b5e3935c3587a499c82c74898aaeb6f5,
         type: 3}
       propertyPath: m_Name

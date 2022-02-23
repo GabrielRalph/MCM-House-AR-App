@@ -164,6 +164,7 @@ MonoBehaviour:
   Locked: 0
   ClickBoxMode: 1
   ClickBoxPaddingVW: {x: 5, y: 0}
+  Haptic: 1
 --- !u!1 &2236125343690907821
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,7 +261,7 @@ MonoBehaviour:
     left: 0
     top: 0
     right: 0
-    bottom: 12
+    bottom: 8
   Text: {fileID: 0}
   FontSizeVW: 5.5
 --- !u!1 &5581403962511896342

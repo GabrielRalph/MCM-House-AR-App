@@ -180,6 +180,7 @@ MonoBehaviour:
   Locked: 0
   ClickBoxMode: 1
   ClickBoxPaddingVW: {x: 1, y: 0}
+  Haptic: 1
 --- !u!1 &2100433980855096753
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,7 +378,7 @@ MonoBehaviour:
     left: 0
     top: 0
     right: 0
-    bottom: 1
+    bottom: 8.5
   FixedRatio: 0.1
   FixedHeight: 0
 --- !u!1 &4109159003670133926

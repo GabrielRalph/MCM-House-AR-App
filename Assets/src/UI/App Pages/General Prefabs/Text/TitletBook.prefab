@@ -96,6 +96,6 @@ MonoBehaviour:
     left: 0
     top: 0
     right: 0
-    bottom: 8.5
+    bottom: 8
   Text: {fileID: 0}
   FontSizeVW: 5.3

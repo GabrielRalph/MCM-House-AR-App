@@ -261,8 +261,7 @@ MonoBehaviour:
   Locked: 0
   ClickBoxMode: 1
   ClickBoxPaddingVW: {x: 3.5, y: 3}
-  ClickMoveLimit: 5
-  minY: 0
+  Haptic: 1
 --- !u!1 &11292990583362121
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,8 +364,7 @@ MonoBehaviour:
   Locked: 0
   ClickBoxMode: 1
   ClickBoxPaddingVW: {x: 3.5, y: 2}
-  ClickMoveLimit: 5
-  minY: 0
+  Haptic: 1
 --- !u!1 &11292990864924196
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,8 +519,7 @@ MonoBehaviour:
   Locked: 0
   ClickBoxMode: 1
   ClickBoxPaddingVW: {x: 8, y: 0}
-  ClickMoveLimit: 5
-  minY: 0
+  Haptic: 1
 --- !u!114 &8327129528565128303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -715,8 +712,7 @@ MonoBehaviour:
   Locked: 0
   ClickBoxMode: 1
   ClickBoxPaddingVW: {x: 3.5, y: 2}
-  ClickMoveLimit: 5
-  minY: 0
+  Haptic: 1
 --- !u!1 &617341963018679360
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,8 +875,7 @@ MonoBehaviour:
   Locked: 0
   ClickBoxMode: 1
   ClickBoxPaddingVW: {x: 3.5, y: 2}
-  ClickMoveLimit: 5
-  minY: 0
+  Haptic: 1
 --- !u!114 &7386768630931598154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1007,8 +1002,7 @@ MonoBehaviour:
   Locked: 0
   ClickBoxMode: 0
   ClickBoxPaddingVW: {x: 5, y: 5}
-  ClickMoveLimit: 5
-  minY: 0
+  Haptic: 1
 --- !u!1 &4213320284248885537
 GameObject:
   m_ObjectHideFlags: 0
@@ -1111,8 +1105,7 @@ MonoBehaviour:
   Locked: 0
   ClickBoxMode: 1
   ClickBoxPaddingVW: {x: 3.5, y: 2}
-  ClickMoveLimit: 5
-  minY: 0
+  Haptic: 1
 --- !u!1 &6455690666238028083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1214,8 +1207,7 @@ MonoBehaviour:
   Locked: 0
   ClickBoxMode: 1
   ClickBoxPaddingVW: {x: 5, y: 0}
-  ClickMoveLimit: 5
-  minY: 0
+  Haptic: 1
 --- !u!1 &7141984126232413305
 GameObject:
   m_ObjectHideFlags: 0
@@ -1334,6 +1326,16 @@ PrefabInstance:
         type: 3}
       propertyPath: MemoryLimit.Note
       value: Please refresh the scene~or remove models to free up space
+      objectReference: {fileID: 0}
+    - target: {fileID: 665670355258159824, guid: 5f36cdad3543e4750843ec2152840e2b,
+        type: 3}
+      propertyPath: ScanLight.Message
+      value: Tip
+      objectReference: {fileID: 0}
+    - target: {fileID: 665670355258159824, guid: 5f36cdad3543e4750843ec2152840e2b,
+        type: 3}
+      propertyPath: LoadedContents.Note
+      value: Point phone at ground~and move around the room
       objectReference: {fileID: 0}
     - target: {fileID: 665670355258159824, guid: 5f36cdad3543e4750843ec2152840e2b,
         type: 3}

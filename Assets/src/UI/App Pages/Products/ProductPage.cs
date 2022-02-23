@@ -13,6 +13,8 @@ public class ProductPage : AppPage{
   public FlexGrid Grid;
   public VelocityScroll Scroll;
 
+  public FontStyle noResultsStyle;
+
   private GameObject grid;
   private bool invalid = false;
 
@@ -56,13 +58,20 @@ public class ProductPage : AppPage{
     });
   }
 
-  public async void Build(string title, List<Variant> variants){
+  public async void Build(string title, List<Variant> variants, bool noResults = false){
     if (invalid) return;
     if (!StartBuild()) return;
     AddLoadingItem();
     Grid.Clear();
 
-    if (Title != null) Title.text = title;
+    if (Title != null){
+      Title.text = title;
+      FontStyle style = FontStyle.Normal;
+      if (noResults) {
+        style = noResultsStyle;
+      }
+      Title.Text.fontStyle = style;
+    }
 
     foreach (Variant variant in variants) {
       Grid.AddElement(MakeIcon(variant));

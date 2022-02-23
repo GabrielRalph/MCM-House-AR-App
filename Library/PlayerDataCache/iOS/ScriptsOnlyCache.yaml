@@ -14,6 +14,7 @@ ScriptsOnlyBuild:
     - ARViewHeader
     - App
     - AssetManager
+    - AutoCarousel
     - AutoGrid
     - BackToAR
     - ClickBox
@@ -107,139 +108,139 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11536}
     - Class: 114
+      Script: {instanceID: 11538}
+    - Class: 114
       Script: {instanceID: 11570}
     - Class: 114
-      Script: {instanceID: 11742}
+      Script: {instanceID: 11676}
     - Class: 114
       Script: {instanceID: 11744}
     - Class: 114
-      Script: {instanceID: 11774}
+      Script: {instanceID: 11746}
     - Class: 114
-      Script: {instanceID: 11828}
+      Script: {instanceID: 11776}
     - Class: 114
-      Script: {instanceID: 11890}
+      Script: {instanceID: 11830}
     - Class: 114
-      Script: {instanceID: 11932}
+      Script: {instanceID: 11892}
     - Class: 114
-      Script: {instanceID: 11984}
+      Script: {instanceID: 11934}
     - Class: 114
-      Script: {instanceID: 11994}
+      Script: {instanceID: 11986}
     - Class: 114
-      Script: {instanceID: 12104}
+      Script: {instanceID: 11996}
     - Class: 114
-      Script: {instanceID: 12142}
+      Script: {instanceID: 12106}
     - Class: 114
-      Script: {instanceID: 12154}
+      Script: {instanceID: 12144}
     - Class: 114
-      Script: {instanceID: 12186}
+      Script: {instanceID: 12156}
     - Class: 114
-      Script: {instanceID: 12286}
+      Script: {instanceID: 12188}
     - Class: 114
-      Script: {instanceID: 12464}
+      Script: {instanceID: 12306}
     - Class: 114
-      Script: {instanceID: 12504}
+      Script: {instanceID: 12466}
     - Class: 114
-      Script: {instanceID: 12508}
+      Script: {instanceID: 12506}
     - Class: 114
-      Script: {instanceID: 12586}
+      Script: {instanceID: 12510}
     - Class: 114
-      Script: {instanceID: 12776}
+      Script: {instanceID: 12588}
     - Class: 114
-      Script: {instanceID: 12924}
+      Script: {instanceID: 12778}
     - Class: 114
-      Script: {instanceID: 12942}
+      Script: {instanceID: 12926}
     - Class: 114
-      Script: {instanceID: 13006}
+      Script: {instanceID: 12944}
     - Class: 114
-      Script: {instanceID: 13038}
+      Script: {instanceID: 13008}
     - Class: 114
-      Script: {instanceID: 13094}
+      Script: {instanceID: 13040}
     - Class: 114
-      Script: {instanceID: 13182}
+      Script: {instanceID: 13096}
     - Class: 114
-      Script: {instanceID: 13224}
+      Script: {instanceID: 13184}
     - Class: 114
-      Script: {instanceID: 13290}
+      Script: {instanceID: 13226}
     - Class: 114
-      Script: {instanceID: 13414}
+      Script: {instanceID: 13292}
     - Class: 114
-      Script: {instanceID: 13456}
+      Script: {instanceID: 13416}
     - Class: 114
-      Script: {instanceID: 13486}
+      Script: {instanceID: 13458}
     - Class: 114
       Script: {instanceID: 13488}
     - Class: 114
-      Script: {instanceID: 13560}
+      Script: {instanceID: 13490}
     - Class: 114
-      Script: {instanceID: 13564}
+      Script: {instanceID: 13562}
     - Class: 114
-      Script: {instanceID: 13638}
+      Script: {instanceID: 13566}
     - Class: 114
-      Script: {instanceID: 13690}
+      Script: {instanceID: 13640}
     - Class: 114
-      Script: {instanceID: 13718}
+      Script: {instanceID: 13692}
     - Class: 114
-      Script: {instanceID: 13864}
+      Script: {instanceID: 13720}
     - Class: 114
-      Script: {instanceID: 13894}
+      Script: {instanceID: 13866}
     - Class: 114
-      Script: {instanceID: 13986}
+      Script: {instanceID: 13896}
     - Class: 114
-      Script: {instanceID: 13998}
+      Script: {instanceID: 13988}
     - Class: 114
-      Script: {instanceID: 14010}
+      Script: {instanceID: 14000}
     - Class: 114
-      Script: {instanceID: 14070}
+      Script: {instanceID: 14012}
     - Class: 114
-      Script: {instanceID: 14100}
+      Script: {instanceID: 14072}
     - Class: 114
-      Script: {instanceID: 14130}
+      Script: {instanceID: 14102}
     - Class: 114
-      Script: {instanceID: 14168}
+      Script: {instanceID: 14132}
     - Class: 114
-      Script: {instanceID: 14198}
+      Script: {instanceID: 14170}
     - Class: 114
-      Script: {instanceID: 14234}
+      Script: {instanceID: 14200}
     - Class: 114
-      Script: {instanceID: 14238}
+      Script: {instanceID: 14236}
     - Class: 114
-      Script: {instanceID: 14242}
+      Script: {instanceID: 14240}
     - Class: 114
-      Script: {instanceID: 14248}
+      Script: {instanceID: 14244}
     - Class: 114
-      Script: {instanceID: 14422}
+      Script: {instanceID: 14250}
     - Class: 114
-      Script: {instanceID: 14432}
+      Script: {instanceID: 14424}
     - Class: 114
       Script: {instanceID: 14434}
     - Class: 114
-      Script: {instanceID: 14492}
+      Script: {instanceID: 14436}
     - Class: 114
-      Script: {instanceID: 14496}
+      Script: {instanceID: 14494}
     - Class: 114
-      Script: {instanceID: 14556}
+      Script: {instanceID: 14498}
     - Class: 114
-      Script: {instanceID: 14632}
+      Script: {instanceID: 14560}
     - Class: 114
-      Script: {instanceID: 14660}
+      Script: {instanceID: 14636}
     - Class: 114
-      Script: {instanceID: 14676}
+      Script: {instanceID: 14664}
     - Class: 114
-      Script: {instanceID: 14704}
+      Script: {instanceID: 14680}
     - Class: 114
-      Script: {instanceID: 14794}
+      Script: {instanceID: 14708}
     - Class: 114
-      Script: {instanceID: 14824}
+      Script: {instanceID: 14798}
     - Class: 114
-      Script: {instanceID: 14826}
+      Script: {instanceID: 14828}
     - Class: 114
-      Script: {instanceID: 14886}
+      Script: {instanceID: 14830}
     - Class: 114
-      Script: {instanceID: 14902}
+      Script: {instanceID: 14890}
     - Class: 114
-      Script: {instanceID: 186712}
-    - Class: 114
-      Script: {instanceID: 331056}
+      Script: {instanceID: 14906}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -269,16 +270,22 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: aeb62f729c52c814dec86c47dcac1471
+      Hash: ef5c43f921427d03730f6ea4c848f07d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
-    className: Text
+    className: RectMask2D
   - hash:
       serializedVersion: 2
       Hash: 89f9a1b4c64db9559e39f4a2e3bfaadd
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: aeb62f729c52c814dec86c47dcac1471
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
   - hash:
       serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
@@ -309,6 +316,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: b2f02886f29b9c1cf630efba88fb859b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BackToAR
   - hash:
       serializedVersion: 2
       Hash: 48086b421d6aac9c5898fb4801ea2e9c
@@ -545,10 +558,10 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
-      Hash: ef5c43f921427d03730f6ea4c848f07d
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: RectMask2D
+      Hash: f3cf341e9692134ff8c212339568b6c1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HeaderFader
   - hash:
       serializedVersion: 2
       Hash: 1103fb0758976355cdf9b7d5ce9cb7e0
@@ -1223,7 +1236,7 @@ ScriptsOnlyBuild:
     className: Search
   - hash:
       serializedVersion: 2
-      Hash: 39188157b292b9972b0538936c70f18b
+      Hash: 68875f8dd8da4bbfcb23dafe6adbbcfa
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ProductPage
@@ -1431,18 +1444,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: b2f02886f29b9c1cf630efba88fb859b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BackToAR
-  - hash:
-      serializedVersion: 2
-      Hash: f3cf341e9692134ff8c212339568b6c1
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: HeaderFader
   platform: 9
   scenePathNames:
   - Assets/Scenes/MCM House AR.unity
